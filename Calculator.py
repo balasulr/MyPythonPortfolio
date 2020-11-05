@@ -1,6 +1,6 @@
 # Calculator.py
 
-# This is a calculator program to perform the add, subtract, multiply and divide operation
+# This is a calculator program that performs the addition, subtraction, multiplication and division operations.
 
 def add(num1, num2):  # Returns num1 plus num2
     return num1 + num2
@@ -24,16 +24,16 @@ def div(num1, num2):  # Returns num1 divided by num2
 def run_operation(operation, num1, num2):
     # Determines the operation to be run
     if operation == 1:
-        print("Adding...")
+        print("Adding", num1, "+", num2, "which equals:")
         print(add(num1, num2))
     elif operation == 2:
-        print("Subtracting...")
+        print("Subtracting", num1, "-", num2, "which equals:")
         print(sub(num1, num2))
     elif operation == 3:
-        print("Multiplying...")
+        print("Multiplying",num1, "*", num2, "which equals:")
         print(mul(num1, num2))
     elif operation == 4:
-        print("Dividing...")
+        print("Dividing", num1, "/", num2, "which equals:")
         print(div(num1, num2))
     else:
         print("I don't understand. Please try again")
@@ -45,13 +45,13 @@ def main():
     while not valid_input:
         # Getting user input and turning into integer
         try:
-            print("This is a basic calculator \n")
+            print("This is a basic calculator. \n")
             print("Enter 2 numbers below:")
             num1 = int(input("What is number 1?: "))
             num2 = int(input("What is number 2?: "))
 
-            print("\nYou entered", num1, "for the first number")
-            print("You entered", num2, "for second number\n")
+            print("\nYou entered", num1, "for the first number.")
+            print("You entered", num2, "for second number.\n")
 
             operation = int(input("What do you want to do? \n 1. add, 2. subtract, 3. multiply, or 4. divide."
                                   "\t Enter number: "))
