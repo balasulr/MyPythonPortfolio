@@ -1,6 +1,6 @@
 """
 This file is used to bring functions into the Titanic.Data.Visualization file.
-Deals with the functions to get to know the data better.
+ALso, deals with functions to get to know the data better.
 """
 
 import pandas as pd
