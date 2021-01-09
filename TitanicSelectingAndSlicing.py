@@ -1,6 +1,6 @@
 """
-This file is used to bring functions into the Titanic.Data.Visualization file.
-Also, deals with the functions to select and slice data.
+This file has a list of functions that selects and slices
+data used in the Titanic.Data.Visualization.py.
 """
 
 import pandas as pd
@@ -17,12 +17,14 @@ def headandtailofnamegendersurvived():
 
 def head21ofpclassandsurvived():
     print("Shows the first 21 rows of the ticket class, and if they survived:")
-    print("\nOut of these 21 rows, there are 10 people who survived and 11 who died.")
+    print("\nOut of these 21 rows, there are 10 people "
+          "who survived and 11 who died.")
     print(df[['Pclass', 'Survived']].head(21))
 
 
 def pandaseriesgenderslice():
-    print("Uses a Pandas Series to select rows using slicing to show the first 15 rows:\n")
+    print("Uses a Pandas Series to select rows using "
+          "slicing to show the first 15 rows:\n")
     print("The first number is the index, then gender of the person is shown.")
     print("Out of the first 15 rows, there are 8 female and 7 male.\n")
     print(df['Sex'][0:15])
