@@ -49,5 +49,20 @@ try:
     scatter_age_survive()
     dashlinebreak()
 
+    hist_embarked()
+    dashlinebreak()
+
+    scatter_embark_age_class()
+    dashlinebreak()
+
+    scatter_age_fare_sex()
+    dashlinebreak()
+
+    scatter_age_fare_survive()
+    dashlinebreak()
+
+    scatter_age_fare_embark_port()
+    dashlinebreak()
+
 except (RuntimeError, NameError, SyntaxError):
     print("There is an error. Please try again.")
