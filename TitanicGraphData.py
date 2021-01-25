@@ -42,3 +42,54 @@ def scatter_age_survive_sex():
     sns.scatterplot(x='Survived', y='Age', hue='Sex', data=df)
     plt.show(block=True)
     plt.interactive(False)
+
+
+def embarked_hist():
+    plt.title('Embarked')
+    df['Embarked'].hist()
+
+    plt.show(block=True)
+    plt.interactive(False)
+
+
+def embark_age_class():
+    plt.title('Class based on Port Embarked on')
+    sns.scatterplot(x='Embarked', y='Age', hue='Pclass', data=df)
+
+    plt.legend(loc=(1.01, 0))
+
+    plt.show(block=True)
+    plt.interactive(False)
+
+
+def age_fare_sex_scatter():
+    plt.title('Fare vs Age based on Sex')
+    sns.scatterplot(x='Age', y='Fare', hue='Sex', data=df)
+
+    plt.xlim(left=-2, right=83)
+    plt.ylim(bottom=-20, top=530)
+
+    plt.show(block=True)
+    plt.interactive(False)
+
+
+def age_fare_survive_scatter():
+    plt.title('Fare vs Age based on Survival')
+    sns.scatterplot(x='Age', y='Fare', hue='Survived', data=df)
+
+    plt.xlim(left=-2, right=83)
+    plt.ylim(bottom=-20, top=530)
+
+    plt.show(block=True)
+    plt.interactive(False)
+
+
+def age_fare_embark_port_scatter():
+    plt.title('Fare vs Age based on Embarked Port')
+    sns.scatterplot(x='Age', y='Fare', hue='Embarked', data=df)
+
+    plt.xlim(left=-2, right=83)
+    plt.ylim(bottom=-20, top=530)
+
+    plt.show(block=True)
+    plt.interactive(False)
